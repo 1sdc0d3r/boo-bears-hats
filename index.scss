@@ -1,0 +1,92 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+h2 {
+  margin-top: 0;
+  font-size: 2em;
+}
+body {
+  background-color: pink;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  //   margin: 1em 2em;
+  margin: 0;
+  padding: 0;
+
+  .tile-imgs {
+    // position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    justify-content: center;
+    .tile {
+      width: 20%;
+      height: 20em;
+      float: left;
+      //   padding: 0.25em;
+    }
+    // .row1 {
+    //   //   clear: both;
+    //   img {
+    //     border: 2px solid red;
+    //     width: 50%;
+    //   }
+    // }
+    .tile:nth-child(-n + 2) {
+      //   border: 2px solid red;
+      width: 50%;
+      height: 33em;
+    }
+  }
+
+  .about {
+    h3 {
+    }
+    // display: flex;
+    // flex-wrap: wrap;
+    margin: 3em 7% 2em;
+    align-items: center;
+    div {
+      img {
+        width: 50%;
+        //   height: 90%;
+        height: 20em;
+        // float: left;
+      }
+      p {
+        width: 40%;
+        text-align: justify;
+        float: right;
+        margin-top: 5%;
+      }
+    }
+  }
+  .pricing {
+    margin-top: 2em;
+    text-align: center;
+  }
+  .contact {
+    width: 80%;
+    margin: auto;
+    form {
+      display: flex;
+      flex-direction: column;
+      //   width: 30%;
+    }
+  }
+}
+footer {
+  text-align: center;
+  color: rgb(255, 192, 205);
+  color: black;
+}
