@@ -24,6 +24,14 @@ body {
   padding: 0;
 }
 
+body #logo {
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  top: 0.75%;
+  left: 0.75%;
+}
+
 body .tile-imgs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,9 +79,36 @@ body .pricing {
   text-align: center;
 }
 
+body .pricing .sizing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: inset 5px magenta;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+}
+
+body .pricing .sizing p {
+  padding: 0.25em;
+}
+
+body .pricing .sizing p span {
+  font-weight: 700;
+}
+
+body .pricing img {
+  width: 4em;
+  height: 4em;
+}
+
 body .contact {
   width: 80%;
-  margin: auto;
+  margin: 0 auto 2em;
 }
 
 body .contact form {
@@ -84,11 +119,43 @@ body .contact form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px dashed teal;
+  padding: 1em 2em;
+}
+
+body .contact form input:first-of-type {
+  background: #ffb3bf;
+  width: 55%;
+}
+
+body .contact form input:nth-of-type(2) {
+  background: #ffa4b2;
+  width: 70%;
+}
+
+body .contact form input:nth-of-type(3) {
+  background: #ff8799;
+  width: 85%;
+}
+
+body .contact form textarea {
+  width: 100%;
+  background: #ff6f85;
+}
+
+body .contact form button[type="submit"] {
+  width: 25%;
+  min-width: 12em;
 }
 
 footer {
   text-align: center;
-  color: #ffc0cd;
-  color: black;
+}
+
+footer span {
+  color: magenta;
 }
 /*# sourceMappingURL=index.css.map */

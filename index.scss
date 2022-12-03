@@ -23,6 +23,14 @@ body {
   margin: 0;
   padding: 0;
 
+  #logo {
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    top: 0.75%;
+    left: 0.75%;
+  }
+
   .tile-imgs {
     // position: relative;
     display: flex;
@@ -74,19 +82,75 @@ body {
   .pricing {
     margin-top: 2em;
     text-align: center;
+
+    .sizing {
+      display: flex;
+      justify-content: center;
+      border: inset 5px magenta;
+      width: -webkit-min-content;
+      width: -moz-min-content;
+      width: min-content;
+      margin: auto;
+      p {
+        padding: 0.25em;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+    img {
+      width: 4em;
+      height: 4em;
+    }
   }
   .contact {
     width: 80%;
-    margin: auto;
+    margin: 0 auto 2em;
     form {
       display: flex;
       flex-direction: column;
-      //   width: 30%;
+      align-items: center;
+      border: 2px dashed teal;
+      padding: 1em 2em;
+      //   width: 100%;
+      //   input,
+      //   textarea {
+      //     width: 80%;
+      //   }
+      //! webkit keeps repopulating this ::placeholder
+      //   input::placeholder,
+      //   textarea::placeholder {
+      //     color: black;
+      //     text-align: center;
+      //     font-style: italic;
+      //   }
+
+      input:first-of-type {
+        background: rgb(255, 179, 191);
+        width: 55%;
+      }
+      input:nth-of-type(2) {
+        background: rgb(255, 164, 178);
+        width: 70%;
+      }
+      input:nth-of-type(3) {
+        background: rgb(255, 135, 153);
+        width: 85%;
+      }
+      textarea {
+        width: 100%;
+        background: rgb(255, 111, 133);
+      }
+      button[type="submit"] {
+        width: 25%;
+        min-width: 12em;
+      }
     }
   }
 }
 footer {
   text-align: center;
-  color: rgb(255, 192, 205);
-  color: black;
+  span {
+    color: magenta;
+  }
 }
